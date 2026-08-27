@@ -20,7 +20,7 @@ jobs:
 
       - name: Pull toolchain
         run: |
-          mkdir clang && curl https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android16-release/clang-r547379.tar.gz -RLO && tar -C clang/ -xf clang-*.tar.gz
+          git clone --depth=1 https://github.com/kdrag0n/proton-clang clang
 
       - name: Pull kernel source
         run: |

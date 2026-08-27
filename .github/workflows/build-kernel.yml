@@ -3,6 +3,7 @@ name: Build MikaKernel
 on:
   workflow_dispatch:
 
+jobs:
       - name: Build kernel
         run: |
           export KBUILD_BUILD_USER="zclkkk"
